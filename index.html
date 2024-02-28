@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestão acadêmica</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48pt;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manutenção de Usuários do Sistema Interno</h1>
+    <p>
+        <label for="user">Usuário</label>
+        <input type="text" name="user" id="user" minlength="3" maxlength="16">
+    </p>
+    <p>
+        <label for="pass">Senha</label>
+        <input type="password" name="pass" id="pass" minlength="8">
+    </p>
+    <P>   
+        <label for="Status">Status</label>
+        <select name="Status" id="Status">
+            <option value="Ativo">Ativo</option>
+            <option value="Inativo">Inativo</option>
+        </select>
+  </P>
+
+    <p>Tipo:</p>
+
+<form>
+  <input type="radio" id="Técnico" name="fav_language" value="Técnico">
+  <label for="Técnico">Técnico</label><br>
+  <input type="radio" id="Professor" name="fav_language" value="Professor">
+  <label for="Professor">Professor</label><br>
+  <input type="radio" id="Aluno" name="fav_language" value="Aluno">
+  <label for="Aluno">Aluno</label>
+
+  <p>
+    <label for="user">Data de Criação</label>
+    <input type="text" name="user" id="user" minlength="3" maxlength="16">
+</p>
+   
+    <p>Perfil:</p>
+
+<form>
+    <input type="radio" id="Convidado" name="fav_language" value="Convidado">
+    <label for="Convidado">Convidado</label><br>
+    <input type="radio" id="Administrador" name="fav_language" value="Administrador">
+    <label for="Administrador">Administrador</label><br>
+    <p>
+      <label for="Observações">Observações</label>
+      <textarea name="Observação" id="Observação" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <label for="user">Módulos</label>
+        <form>
+            <p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Compras">
+            <label for="vehicle1"> Compras</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Biblioteca">
+            <label for="vehicle2"> Biblioteca</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Acadêmico">
+            <label for="vehicle3"> Acadêmico</label>
+            </p>
+
+            <p>
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Documentação">
+                    <label for="vehicle1"> Documentação</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Recursos Humanos">
+                    <label for="vehicle2"> Recursos Humanos</label><br>
+                </form>
+            </p>
+            
+            
+        </form>
+    </p>
+    <p>
+        <button type="submit">Cadastrar</button>
+        <button type="reset"> Excluir</button>
+
+    </p>
+</form>
+
+</body>
+</html>
